@@ -1,0 +1,134 @@
+{
+  "name": "my-ui",
+  "version": "0.1.0",
+  "private": true,
+  "keywords": [
+    "ElementUI",
+    "UI组件"
+  ],
+  "main": "core/index.js",
+  "sideEffects": [
+    "*.scss",
+    "*.css",
+    "*.vue",
+    "**/*/.vuepress/*",
+    "**/*/config.js",
+    "ui/lib/icons/*.js",
+    "ui/lib/charts/themes/*.js",
+    "echarts/lib/**/*.js"
+  ],
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "color": "node bin/my color",
+    "fix": "node bin/my fix",
+    "coder": "node bin/my coder",
+    "svg": "node bin/my svg",
+    "theme": "node bin/my theme",
+    "ready": "node bin/my ready",
+    "route": "node bin/my route",
+    "dev": "npm run ready && concurrently \"npm run serve -- --open\" \"npm run route watch\"",
+    "preview": "node bin/my preview",
+    "demo": "node bin/my demo",
+    "jsdoc": "node bin/my jsdoc",
+    "start": "node bin/my start",
+    "bridge": "node bin/my bridge",
+    "app": " node bin/my app",
+    "page": "node bin/my page",
+    "lint": "vue-cli-service lint"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "bin": {
+    "my": "bin/my.js"
+  },
+  "dependencies": {
+    "@ant-design/colors": "^6.0.0",
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "core-js": "^3.9.1",
+    "crypto-js": "^4.0.0",
+    "element-ui": "^2.15.1",
+    "gray-matter": "^4.0.2",
+    "lodash": "^4.17.21",
+    "mockjs": "^1.1.0",
+    "nprogress": "^0.2.0",
+    "opn": "^6.0.0",
+    "postcss-loader": "^4.0.0",
+    "vue": "^2.6.11",
+    "vue-router": "^3.5.1",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "@intervolga/optimize-cssnano-plugin": "^1.0.6",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "autodll-webpack-plugin": "^0.4.2",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-component": "^1.1.1",
+    "concurrently": "^6.0.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "js-beautify": "^1.13.5",
+    "jsdoc": "^3.6.6",
+    "mini-css-extract-plugin": "^1.2.1",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.1.0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {
+      "indent": 0,
+      "vue/script-indent": 0,
+      "vue/require-prop-type-constructor": 0,
+      "vue/no-use-v-if-with-v-for": 0,
+      "no-console": 0,
+      "no-trailing-spaces": 0,
+      "no-multiple-empty-lines": 0,
+      "no-extra-boolean-cast": 0,
+      "valid-jsdoc": 0,
+      "one-var": 0,
+      "semi": 0,
+      "no-new": 0,
+      "no-extra-semi": 0,
+      "keyword-spacing": 0,
+      "space-before-function-paren": 0,
+      "arrow-parens": 0,
+      "generator-star-spacing": 0,
+      "no-mixed-operators": 0,
+      "padded-blocks": 0,
+      "eol-last": 0,
+      "object-curly-spacing": 0,
+      "no-callback-literal": 0,
+      "multiline-ternary": 0
+    }
+  },
+  "eslintIgnore": [
+    "**/icons/iconfont.js",
+    "**/templates/jsdoc/**/*.js",
+    "**/charts/themes/**/*.js",
+    "ui/lib/components/my-tag-canvas/src/tagcanvas.js"
+  ],
+  "jest": {
+    "preset": "@vue/cli-plugin-unit-jest"
+  },
+  "typings": "types/index.d.ts",
+  "browserslist": [
+    "> 1%",
+    "last 5 versions",
+    "not dead"
+  ]
+}
