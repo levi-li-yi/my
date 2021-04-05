@@ -1,8 +1,8 @@
 // markdown文档生成demo vue组件
 const fs = require('fs')
-const { logWidthSpinner, stopSpinner } = require('@vue/cli-shared-utils')
+const { logWithSpinner, stopSpinner } = require('@vue/cli-shared-utils')
 const MarkdownIt = require('markdown-it')
-const mdLoader = require('../loader/docs-extend-md-loader')
+const mdLoader = require('../loaders/docs-extend-md-loader')
 const core = require('../index')
 const utils = require('../utils')
 
@@ -15,7 +15,7 @@ function clear () {
 
 // 分析md文件，生成demo vue文件
 function build () {
-  logWidthSpinner('构建markdown代码实例demo')
+  logWithSpinner('构建markdown代码实例demo')
   const files = utils.getFiles(core.DocsPath)
     .filter(file => file.includes('.md'))
 
