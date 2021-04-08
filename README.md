@@ -1,24 +1,7 @@
 # my-ui
 
-## Project setup
-```
-npm install
-```
+### package.json 中的 scripts 脚本释义
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+| 名称  | 执行目的 | 相关构建资源文件 |
+| ----- | -------- | ---------------- |
+| serve | vue cli  | vue.config.js    |
