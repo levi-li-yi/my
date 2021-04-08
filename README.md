@@ -1,4 +1,4 @@
-# zvan-ui
+# zvan-ui 之维安 Web 前端一站式工程框架
 
 ### package.json 中的 scripts 脚本释义
 
@@ -22,7 +22,6 @@
 | app      | 在创建根目录下一个单独的 vue 应用                                                              | core/build/app.js              |
 | page     | 向已知的 vue 应用或者根目录下的 src/views 目录下添加一个 vue 单文件                            | core/bin/page.js               |
 | lint     | lint 检查                                                                                      |                                |
-| docs:dev | 开发环境启动文档系统                                                                           |                                |
 | serve    |                                                                                                |                                |
 | serve    |                                                                                                |                                |
 | serve    |                                                                                                |                                |
