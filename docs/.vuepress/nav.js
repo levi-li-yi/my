@@ -12,10 +12,10 @@ module.exports = [
     text: '地图',
     link: '/ui/map/'
   },
-  {
-    text: '关系图',
-    link: '/ui/go/'
-  },
+  // {
+  //   text: '关系图',
+  //   link: '/ui/go/'
+  // },
   {
     text: '图标',
     link: '/ui/icon/'
