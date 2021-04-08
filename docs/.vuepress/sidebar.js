@@ -27,17 +27,18 @@ function createMenus(title, children, isSort = true) {
   }
 }
 
+// 侧边栏配置：资源指向到docs一级子目录下
 module.exports = {
   '/element/': [
     createMenus('Basic', [
       'layout',
-      'container',
-      'color',
-      'typography',
-      'border',
-      'icon',
-      'button',
-      'link'
+      // 'container',
+      // 'color',
+      // 'typography',
+      // 'border',
+      // 'icon',
+      // 'button',
+      // 'link'
     ])
   ],
   '/ui/components/': [],

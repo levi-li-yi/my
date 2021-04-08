@@ -125,7 +125,7 @@ module.exports = {
    * 递归获取文件路径数组
    */
   getFiles (dir) {
-    const result = []
+    let result = []
     const files = fs.readdirSync(dir) || []
     files.forEach(file => {
       const fullPath = this.join(dir, file)

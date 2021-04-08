@@ -30,12 +30,13 @@
     "preview": "node bin/my preview",
     "demo": "node bin/my demo",
     "jsdoc": "node bin/my jsdoc",
-    "dev:docs": "npm run demo && npm run jsdoc && node --max_old_space_size=8096 node_modules/vuepress/cli.js dev docs",
+    "dev:docs": "npm run demo && npm run jsdoc && node --max_old_space_size=8096 node_modules/vuepress/cli.js dev docs --temp .temp",
     "start": "node bin/my start",
     "bridge": "node bin/my bridge",
     "app": " node bin/my app",
     "page": "node bin/my page",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "docs:dev": "vuepress dev docs"
   },
   "engines": {
     "node": ">=10"
@@ -49,6 +50,7 @@
     "body-parser": "^1.19.0",
     "core-js": "^3.9.1",
     "crypto-js": "^4.0.0",
+    "docdash": "^1.2.0",
     "element-ui": "^2.15.1",
     "gray-matter": "^4.0.2",
     "lodash": "^4.17.21",

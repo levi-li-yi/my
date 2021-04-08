@@ -1,5 +1,5 @@
 // vuepress全局配置文件
-const config = require('../../core/config')
+const config = require('../../core/config')()
 const utils = require('../../core/utils')
 const core = require('../../core/index')
 const webpackExtend = require('../../core/config/webpack.docs.extend')
@@ -8,7 +8,7 @@ const nav = require('./nav')
 const sidebar = require('./sidebar')
 
 module.exports = {
-  title: 'ZVANUI 1.x',
+  title: 'Web前端一站式工程框架',
   locales: {
     '/': {
       lang: 'zh-CN'
@@ -16,6 +16,7 @@ module.exports = {
   },
   description: '',
   port: config.docsDevPort,
+  dest: utils.join('./', 'web', '/my/'),
   dest: utils.join(core.MyRootPath, config.docsOutputDir, config.docsBaseUrl),
   base: config.docsBaseUrl,
   head: [
@@ -58,7 +59,7 @@ module.exports = {
   },
   chainWebpack: webpackExtend,
   extraWatchFiles: [
-    'nav.js',
-    'sidebar.js'
+    '.vuepress/nav.js',
+    '.vuepress/sidebar.js'
   ]
 }

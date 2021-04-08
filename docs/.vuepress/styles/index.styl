@@ -1,0 +1,35 @@
+html, body, #app, .theme-container {
+  min-height 100vh;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+}
+
+.theme-container{
+  .navbar{
+    background: url("~$docs/assets/images/home_bg.jpg") no-repeat center 0;
+    border-bottom-color: transparent
+  }
+  .navbar .site-name{
+    color: #fff;
+  }
+  .navbar .links{
+    background: transparent;
+    color: #fff;
+  }
+  .nav-item > a:not(.external):hover, .nav-item > a:not(.external).router-link-active{
+    margin-bottom: -2px;
+    border-bottom: 2px solid #1890ff;
+  }
+  .nav-links a:hover, .nav-links a.router-link-active{
+    color: #1890ff;
+  }
+  .dropdown-wrapper .dropdown-title, .dropdown-wrapper .mobile-dropdown-title{
+    color: #fff;
+  }
+}

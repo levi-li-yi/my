@@ -1,13 +1,5 @@
-// 文档系统导航
+// 文档系统顶部导航
 module.exports = [
-  {
-    text: '指南',
-    link: '/guide/'
-  },
-  {
-    text: '指南',
-    link: '/guide/'
-  },
   {
     text: '指南',
     link: '/guide/'
