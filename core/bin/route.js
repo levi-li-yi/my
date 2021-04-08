@@ -1,7 +1,9 @@
+// 对工程项目中src/views、routes/index.js文件的视图部分与路由数据转化成配置信息
 module.exports = function (args = []) {
   const core = require('../index')
   const utils = require('../utils')
   const config = require('../config')()
+  // core.IsInstalled：判定是否是安装环境
   const packageJson = core.IsInstalled ? require('../../../../../package.json') : require('../../package.json')
 
   const [routeAction, routeApp] = args
