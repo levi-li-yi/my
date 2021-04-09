@@ -8,7 +8,7 @@ const nav = require('./nav')
 const sidebar = require('./sidebar')
 
 module.exports = {
-  title: 'Web前端一站式工程框架',
+  title: 'ZVAN-UI',
   locales: {
     '/': {
       lang: 'zh-CN'
